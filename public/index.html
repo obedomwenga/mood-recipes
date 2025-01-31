@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Based Recipe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-blue-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-xl font-bold text-blue-600">MoodRecipe</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="/login.html" class="text-gray-600 hover:text-blue-600">Login</a>
+                    <a href="/signup.html" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="relative bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                        Find the Perfect Recipe for Your Mood
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Let your emotions guide your culinary journey. Discover recipes that match how you feel.
+                    </p>
+                    <a href="/signup.html" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-700 inline-block">
+                        Get Started Free
+                    </a>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1830/1830839.png" 
+                         alt="Recipe illustration" 
+                         class="w-96 h-96 object-contain">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900">How It Works</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">😊</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Select Your Mood</h3>
+                    <p class="text-gray-600">Tell us how you're feeling right now</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">🍳</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Get Recommendations</h3>
+                    <p class="text-gray-600">Receive personalized recipe suggestions</p>
+                </div>
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <span class="text-2xl">✨</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cook & Enjoy</h3>
+                    <p class="text-gray-600">Create delicious meals that match your mood</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

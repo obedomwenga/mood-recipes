@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodRecipe - Your Recipe Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-blue-50 min-h-screen">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <span class="text-xl font-bold text-blue-600">MoodRecipe</span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span id="username-display" class="text-gray-600"></span>
+                    <button id="logout-btn" class="text-gray-600 hover:text-blue-600">Logout</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl font-bold text-center mb-8">Find Your Perfect Recipe</h1>
+            
+            <!-- Mood Selection -->
+            <div class="bg-white rounded-3xl shadow-lg p-8 mb-8">
+                <h2 class="text-xl mb-6">How are you feeling today?</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <button class="mood-btn" data-mood="happy">😊 Happy</button>
+                    <button class="mood-btn" data-mood="sad">😢 Sad</button>
+                    <button class="mood-btn" data-mood="tired">😴 Tired</button>
+                    <button class="mood-btn" data-mood="stressed">😰 Stressed</button>
+                    <button class="mood-btn" data-mood="accomplished">🏆 Accomplished</button>
+                    <button class="mood-btn" data-mood="inspired">💡 Inspired</button>
+                    <button class="mood-btn" data-mood="peaceful">😌 Peaceful</button>
+                </div>
+            </div>
+
+            <!-- Recipe Display -->
+            <div id="recipe-container" class="hidden bg-white rounded-3xl shadow-lg p-8">
+                <h3 id="recipe-name" class="text-2xl font-bold mb-6"></h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-lg">Ingredients:</h4>
+                        <p id="recipe-ingredients" class="text-gray-600"></p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h4 class="font-bold text-lg">Instructions:</h4>
+                        <p id="recipe-instructions" class="text-gray-600 whitespace-pre-line"></p>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <button id="new-recipe-btn" 
+                            class="bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 transition-colors">
+                        Get Another Recipe
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html> 
